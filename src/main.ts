@@ -1,7 +1,8 @@
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { BotClass } from './BotClass.js';
-import { prefix, token } from './config.js';
+import { default as config } from './config.js';
+const { prefix, token } = new config();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const client = new BotClass(prefix, token, {
