@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node 14",
+
+	"compilerOptions": {
+		"outDir": "dist",
+		"lib": ["es2020"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"target": "es6",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}
