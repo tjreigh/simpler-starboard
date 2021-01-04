@@ -4,13 +4,21 @@
 
 	"compilerOptions": {
 		"outDir": "dist",
-		"lib": ["es2020"],
+		"rootDir": "src",
 		"module": "esnext",
-		"moduleResolution": "node",
-		"target": "es6",
+		"target": "esnext",
 		"strict": true,
 		"esModuleInterop": true,
+		"moduleResolution": "node",
 		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true
-	}
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitThis": false,
+		"lib": ["esnext"]
+	},
+	"watchOptions": {
+		"watchFile": "useFsEvents",
+		"watchDirectory": "useFsEvents",
+		"fallbackPolling": "dynamicPriority"
+	},
+	"exclude": ["**/*.example.ts"]
 }

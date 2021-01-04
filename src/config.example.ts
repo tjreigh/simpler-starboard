@@ -1,9 +1,7 @@
-import { BotConfig } from './structures/BotConfig';
+import { BotConfig } from '@tjdoescode/botts';
 
-class Config implements BotConfig {
-	prefix = '-';
-	token = 'YOUR_TOKEN_HERE';
-	owners = ['YOUR_ID_HERE'];
-}
-
-export default Config;
+export const config: BotConfig = {
+	prefix: '-',
+	token: 'YOUR_TOKEN_HERE',
+	owners: ['YOUR_ID_HERE'],
+};
